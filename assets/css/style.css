@@ -40,12 +40,21 @@
   text-decoration: none;
   font-family: var(--primary-font);
 }
+.topbar_content_address a img {
+margin-top: 4px !important;
+}
+.topbar_content_address h1 a {
+padding-top: 50px !important;
+}
 .border-left {
   border-right: 1px solid #fff;
   padding-right: 10px;
 }
 .topbar_content_address img {
   width: 20px;
+}
+.topbar_imgs {
+  padding-top: 5px !important;
 }
 .topbar_img img {
   width: 30px !important;
@@ -179,16 +188,34 @@
     font-size: 12px;
   }
 }
+@media (max-width: 450px) {
+  .header_content h2 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .header_content h1 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .header_content p {
+    text-align: center;
+    font-size: 12px;
+  }
+  @media (max-width: 450px) {
+    .header_content_heading_address a {
+      font-size: 14px !important;
+    }
+
+}
+}
 @media (max-width: 400px) {
   .header_content_heading_address a {
     font-size: 16px;
   }
 }
-@media (max-width: 400px) {
-  .header_content_heading_address a {
-    font-size: 12px;
-  }
-}
+
+
 /* header end */
 
 /* navbar start */
@@ -198,7 +225,7 @@
   background-color: #ffa155 !important;
 
 }
-
+/* 
 .navbar-nav  span.dropBottom {
   display: block;
   position: absolute;
@@ -211,7 +238,8 @@
   position: absolute;
   width: 100%;
   bottom: 0px;
-}
+  display: block;
+} */
 
 nav {
   margin: 0px 0px;
@@ -222,21 +250,22 @@ nav {
   list-style: none;
 }
 .navbar-nav ul {
-  opacity: 999;
+  /* opacity: 999; */
   position: absolute;
   top: 160%;
   visibility: hidden;
   transition:  0.2s ease;
-  /* -webkit-transition:  0.3s ease; */
+  -webkit-transition:  0.3s ease;
 }
 .navbar-nav ul {
   top: 40px;;
 }
 
 .navbar-nav li:hover > ul {
-  opacity: 999 !important;
+
   top: 120%;
   visibility: visible;
+  display: block;
 }
 .navbar-nav li {
   position: relative;
@@ -263,6 +292,7 @@ width: 200px;
   text-align: start !important;
   color: #000000;
   z-index: 999 !important;
+
 
 }
 .navbar-nav li a img {
@@ -583,7 +613,7 @@ left: 600px;
   border: 1px solid var(--primary-color);
   width: 100%;
  height: 356px;
-  padding: 15px;
+  padding: 35px;
   background: #ffffff;
   transition: 0.5s ease-in-out;
 }
@@ -888,7 +918,7 @@ left: 600px;
 }
 .footer_content_menu_icon {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 .footer_content_menu_icon a {
   width: 35px;
@@ -1037,6 +1067,15 @@ margin: 0px !important;
 font-size: 18px;
 color: #ffffff;
 
+}
+
+@media (max-width: 400px) {
+  .copy_right_content h1 {
+   font-size: 15px;
+  }
+  .copy_right_content p {
+    font-size: 14px;
+  }
 }
 /* copy_right end */
 
