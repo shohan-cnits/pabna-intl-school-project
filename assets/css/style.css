@@ -134,7 +134,7 @@
 
 @media (max-width: 1030px) {
   .header_content h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .header_content h1 {
     text-align: center;
@@ -226,11 +226,11 @@ nav {
   position: absolute;
   top: 160%;
   visibility: hidden;
-  transition:  0.3s ease;
-  -webkit-transition:  0.3s ease;
+  transition:  0.2s ease;
+  /* -webkit-transition:  0.3s ease; */
 }
 .navbar-nav ul {
-  top: 30%;
+  top: 40px;;
 }
 
 .navbar-nav li:hover > ul {
@@ -244,7 +244,7 @@ nav {
 .navbar-nav li a{
   cursor: pointer;
   font-size: 14px !important;
-  text-align: center !important;
+
 }
 .navbar-nav ul  {
 background: url(../image/Group\ 291.png), rgba(255, 255, 255, 0.8);
@@ -252,7 +252,7 @@ margin: 0;
 padding: 0;
 list-style: none;
 width: 200px;
-  display: inline-block;
+  display: block;
   border-top: 3px solid var(--primary-color) !important;
   margin-top: 10px !important;
   z-index: 999 !important;
@@ -525,12 +525,13 @@ left: 600px;
   text-align: center;
   color: var(--primary-color);
   transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
 .prinicpal_card_content_heading_btn a:hover {
   display: block;
   text-align: center;
   color: var(--primary-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 .institution_content {
   border: 1px solid var(--primary-color);
@@ -896,10 +897,13 @@ left: 600px;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
-.footer_content_menu_icon a:hover
+
+.footer_content_menu_icon a:hover 
  {
-  background: linear-gradient( 120deg, rgba(0, 44, 83, 1), rgba(206, 133, 34, 1));
-  color: #ffff;
+background: linear-gradient( 120deg, rgba(0, 44, 83, 1), rgba(206, 133, 34, 1));
+}
+.footer_content_menu_icon a:hover .fa-brands {
+  color: #ffff !important;
 }
 
 
@@ -1035,3 +1039,40 @@ color: #ffffff;
 
 }
 /* copy_right end */
+
+/* aro btn  */
+
+body{  
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+.gobtn{ 
+    border: 1px solid var(--last-color);
+    text-align: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+
+    bottom: 40px;
+    border-radius: 5px;
+    right: 40px;
+ 
+}
+.gobtn:hover {
+  background: linear-gradient( 120deg, rgba(0, 44, 83, 1), rgba(206, 133, 34, 1));
+  border: 1px solid linear-gradient( 120deg, rgba(0, 44, 83, 1), rgba(206, 133, 34, 1));
+}
+.gobtn i{
+    color: #000000;
+    font-size: 1.6em; 
+}
+.gobtn:hover .fa-solid {
+  color: #fff !important;
+}
+.gobtn a{
+    color: #ffffff;  
+}
+/* aro btn  */
