@@ -31,14 +31,11 @@
   font-family: var(--primary-font);
   align-items: center;
 }
-/* .topbar_content_address a {
-  font-size: 15px ;
-  color: #fff;
-  font-family: var(--primary-font);
-} */
+
 .topbar_content_address a {
-  font-size: 19px;
+  font-size: 16px;
   color: #fff;
+  font-weight: 100;
   text-decoration: none;
   font-family: var(--primary-font);
 }
@@ -593,6 +590,7 @@ height: 140px;
 
 .notice_broad_btn a:hover {
   color: var(--bg-color);
+  border: 1px solid var(--bg-color);
 }
 
 .notice_broad_btn {
@@ -607,7 +605,7 @@ height: 140px;
     rgba(0, 44, 83, 1),
     rgba(206, 133, 34, 1)
   );
-  border: 1px solid rgba(0, 44, 83, 1), rgba(206, 133, 34, 1) !important;
+  border: 1px solid var(--bg-color);
 }
 .marquee {
   height: 400px;
@@ -791,10 +789,11 @@ height: 140px;
     rgba(0, 44, 83, 1),
     rgba(206, 133, 34, 1)
   );
-  border: 1px solid rgba(0, 44, 83, 1), rgba(206, 133, 34, 1) !important;
+  border: none;
 }
 .institution_gallery_content_btn a:hover {
   color: var(--bg-color);
+  border: 1px solid var(--bg-color);
 }
 
 /* institution gallery end */
@@ -939,8 +938,18 @@ height: 140px;
 .admission_content_cards {
   border: 1px solid #ce8522;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
   background: #ce8522;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.admission_content_cards:hover {
+  border: 1px solid #ce8522;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(206, 133, 34, .8);
   cursor: pointer;
 }
 
@@ -950,6 +959,15 @@ height: 140px;
   border: 1px solid var(--bg-color);
   border-radius: 50px;
   background: var(--bg-color);
+  transition: .5s ease-in-out;
+}
+.admission_content_card_img:hover {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--bg-color);
+  border-radius: 50px;
+  background: rgba(206, 133, 34);
+
 }
 
 .admission_card_imgs {
@@ -1356,7 +1374,7 @@ html {
   height: 50px;
   line-height: 55px;
 
-  bottom: 40px;
+  bottom: 100px;
   border-radius: 5px;
   right: 40px;
 }
@@ -1366,10 +1384,8 @@ html {
     rgba(0, 44, 83, 1),
     rgba(206, 133, 34, 1)
   );
-  border: 1px solid  linear-gradient(
-    rgba(0, 44, 83, 1),
-    rgba(206, 133, 34, 1)
-  ) !important;
+  border: 1px solid  var(--bg-color)
+  !important;
 }
 
 .gobtn i {
@@ -1379,6 +1395,7 @@ html {
 
 .gobtn:hover .fa-solid {
   color: var(--bg-color) !important;
+  border-color: #fff;
 }
 
 .gobtn a {
