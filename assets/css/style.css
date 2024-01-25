@@ -954,8 +954,8 @@ height: 140px;
 }
 
 .admission_content_card_img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border: 1px solid var(--bg-color);
   border-radius: 50px;
   background: var(--bg-color);
@@ -997,11 +997,12 @@ height: 140px;
 }
 
 .admission_content_card_text h2 a {
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 500;
   text-align: left;
   color: var(--bg-color);
   text-decoration: none;
+  display: inline-block;
 }
 
 .admission_content_card_texts h2 a {
@@ -1288,10 +1289,39 @@ line-height: 35px;
   color: var(--bg-color);
   font-weight: 800;
 }
+.footer_page_content_img_overlay_text h2 a {
+  font-size: 16px;
+  color: var(--bg-color);
+  font-weight: 800;
+  transition:  .5s ease;
+  text-decoration: none;
+}
+.footer_page_content_img_overlay_text h2 a:hover {
+  font-size: 16px;
+  color: var(--bg-color);
+  font-weight: 800;
+  transition:  .5s ease;
+  text-decoration: underline;
+}
 
 .footer_page_content_img_overlay_text p {
   font-size: 14px;
   color: var(--bg-color);
+  
+}
+.footer_page_content_img_overlay_text p a{
+  font-size: 14px;
+  color: var(--bg-color);
+  transition:  .5s ease;
+  text-decoration: none;
+
+}
+.footer_page_content_img_overlay_text p a:hover{
+  font-size: 14px;
+  color: var(--bg-color);
+  transition:  .5s ease;
+  text-decoration: underline;
+
 }
 
 
@@ -1367,15 +1397,13 @@ html {
   scroll-behavior: smooth;
 }
 .gobtn {
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   text-align: center;
   position: fixed;
   width: 50px;
   height: 50px;
   line-height: 55px;
-
   bottom: 100px;
-  border-radius: 5px;
   right: 40px;
 }
 .gobtn:hover {
@@ -1384,7 +1412,7 @@ html {
     rgba(0, 44, 83, 1),
     rgba(206, 133, 34, 1)
   );
-  border: 1px solid  var(--bg-color)
+  border: 2px solid  var(--bg-color)
   !important;
 }
 
