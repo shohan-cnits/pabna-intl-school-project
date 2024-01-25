@@ -366,3 +366,246 @@ height: 140px;
     color: var(--bg-color);
 }
 /* hero  end */
+
+/*  admissison page start */
+#admissison_page {
+    background-image: url(../image/web_bd_bg-01.png);
+    background-position: cover;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.admissison_page_content {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    background: var(--bg-color);
+    padding: 15px;
+}
+
+.admissison_content_heading h1{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary-color);
+    display: inline-block;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Academic Details start */
+.academic_Details_heading {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.academic_Details_heading_text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(206, 133, 34, 1);
+}
+
+.academic_Details_heading_line {
+    border: 1px solid rgba(150, 150, 150, 1);
+    width: 81%;
+    height: 0;
+}
+
+.academic_details_content_name label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.academic_details_content_name input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.academic_details_content_class label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.academic_details_content_class select {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.academic_details_content_section label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.academic_details_content_section select {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.academic_details_content_date label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.academic_details_content_date input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.academic_details_content_category label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+} 
+
+.academic_details_content_category select {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .academic_Details_heading  {
+   flex-direction: column;
+    }
+    .academic_Details_heading_line {
+        width: 100%;
+        margin-top: 0px !important;
+    }
+  }
+
+/* Academic Details end */
+
+/* students Details start */
+.academic_Details_heading {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.academic_Details_heading_text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(206, 133, 34, 1);
+}
+
+.academic_Details_heading_line {
+    border: 1px solid rgba(150, 150, 150, 1);
+    width: 81%;
+    height: 0;
+}
+
+/* .students_details_content {
+    margin-top: 80px;
+    display: flex;
+} */
+
+.students_details_from_content_photo {
+    width: calc(100% - 80px);
+    aspect-ratio: 1/1;
+}
+
+.students_details_from_content_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.students_details_from_content_text  {
+    width: 80px;
+    text-align: center;
+}
+
+.students_details_from_content_text p {
+   margin-bottom: 0;
+}
+
+.student_from_content {
+    margin-top: 90px ;
+}
+
+.students_details_form_name label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.students_details_form_name input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.students_details_from_img {
+    border: 1px solid rgba(150, 150, 150, 1);
+    width: 100%;
+
+    padding: 20px;
+}
+
+.students_details_from_content {
+    display: flex;
+ align-items: center;
+}
+
+
+.students_details_from_content_photo_btn {
+    align-items: center;
+    display: flex;
+}
+
+.students_details_from_content_photo_btn input{
+    display: none;
+}
+
+.students_details_from_content_photo_btn label {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid rgba(150, 150, 150, 1);
+    width: 100%;
+    text-align: center;
+}
+
+.students_details_form_brithday label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.students_details_form_brithday input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.students_details_form_gender label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.students_details_form_gender select {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+/* students Details end */
+
+/*  admissison page end */
