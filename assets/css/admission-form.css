@@ -379,7 +379,7 @@ height: 140px;
     border: 1px solid var(--primary-color);
     width: 100%;
     background: var(--bg-color);
-    padding: 15px;
+    padding: 25px;
 }
 
 .admissison_content_heading h1{
@@ -399,14 +399,18 @@ height: 140px;
 }
 
 .academic_Details_heading_text h1 {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 800;
     color: rgba(206, 133, 34, 1);
+ 
+}
+.academic_Details_heading_text {
+    width: 190px;
 }
 
 .academic_Details_heading_line {
     border: 1px solid rgba(150, 150, 150, 1);
-    width: 81%;
+   width: calc(100% - 190px);
     height: 0;
 }
 
@@ -418,7 +422,7 @@ height: 140px;
 
 .academic_details_content_name input {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -431,7 +435,7 @@ height: 140px;
 
 .academic_details_content_class select {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -444,7 +448,7 @@ height: 140px;
 
 .academic_details_content_section select {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -457,7 +461,7 @@ height: 140px;
 
 .academic_details_content_date input {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -470,7 +474,7 @@ height: 140px;
 
 .academic_details_content_category select {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -495,22 +499,6 @@ height: 140px;
     justify-content: space-between;
 }
 
-.academic_Details_heading_text h1 {
-    font-size: 25px;
-    font-weight: 800;
-    color: rgba(206, 133, 34, 1);
-}
-
-.academic_Details_heading_line {
-    border: 1px solid rgba(150, 150, 150, 1);
-    width: 81%;
-    height: 0;
-}
-
-/* .students_details_content {
-    margin-top: 80px;
-    display: flex;
-} */
 
 .students_details_from_content_photo {
     width: calc(100% - 80px);
@@ -534,7 +522,7 @@ height: 140px;
 }
 
 .student_from_content {
-    margin-top: 90px ;
+    margin-top: 120px ;
 }
 
 .students_details_form_name label{
@@ -545,7 +533,7 @@ height: 140px;
 
 .students_details_form_name input {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -559,7 +547,7 @@ height: 140px;
 
 .students_details_from_content {
     display: flex;
- align-items: center;
+  align-items: center;
 }
 
 
@@ -589,7 +577,7 @@ height: 140px;
 
 .students_details_form_brithday input {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
@@ -602,10 +590,448 @@ height: 140px;
 
 .students_details_form_gender select {
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     outline: none;
     font-size: 16px;
 }
+
+
+@media screen and (max-width: 990px) {
+    .student_from_content {
+    margin-top: 30px;
+    }
+  }
+
 /* students Details end */
+
+/* student about yourself start */
+.blood_group label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.blood_group select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.religion label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.religion select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.student_phn_number label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.student_phn_number input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.email label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.email select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.mother_tongue label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.mother_tongue input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+.nid_card label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.nid_card input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.present_address label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+.present_address textarea{
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    aspect-ratio: 2/1;
+}
+.permanent_address label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+.permanent_address textarea{
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    aspect-ratio: 2/1;
+}
+
+.city label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.city select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.state {
+    margin-top: 90px;
+}
+
+.state label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.state select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 990px) {
+    .state {
+    margin-top: 30px;
+    }
+  }
+@media screen and (max-width: 1300px) {
+    .state {
+    margin-top: 40px;
+    }
+  }
+
+
+/* student about yourself end */
+
+/*  Previous Institute Details start */
+.previous_institute_heading {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.previous_institute_heading_text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(206, 133, 34, 1);
+ 
+}
+.previous_institute_heading_text {
+    width: 300px;
+}
+
+.previous_institute_heading_line {
+    border: 1px solid rgba(150, 150, 150, 1);
+   width: calc(100% - 300px);
+    height: 0;
+}
+
+
+.previous_institute_name label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.previous_institute_name input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.qualification label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.qualification input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.remarks label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+.remarks textarea{
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    aspect-ratio: 2/1;
+}
+/*  Previous Institute Details end */
+
+/* Guardian Details start */
+.guardian_details_heading {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.guardian_details_heading_text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(206, 133, 34, 1);
+ 
+}
+.guardian_details_heading_text {
+    width: 300px;
+}
+
+.guardian_details_heading_line {
+    border: 1px solid rgba(150, 150, 150, 1);
+   width: calc(100% - 300px);
+    height: 0;
+}
+
+.guardian_name label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_name input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.relation label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.relation input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+
+.father_name label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.father_name input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+.mother_name label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.mother_name input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+.occupation label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.occupation input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+.income label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.income input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.education label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.education input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.guardian_e_mail label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_e_mail input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.guardian_mobile label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_mobile input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.guardian_address label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_address input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.guardian_city label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_city select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+.guardian_state label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_state select {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.guardian_photo label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800; 
+}
+
+.guardian_photo input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+
+
+.guardian_photo_btn {
+    align-items: center;
+    display: flex;
+}
+
+.guardian_photo_btn input{
+    display: none;
+}
+
+.guardian_photo_btn label {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid rgba(150, 150, 150, 1);
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+/* Guardian Details end */
 
 /*  admissison page end */
