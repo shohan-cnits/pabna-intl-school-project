@@ -706,21 +706,24 @@ margin: auto;
 
 @media screen and (max-width: 1200px) {
     .e-mail_text a {
-      font-size: 13px !important;
+      font-size: 15px !important;
     }
   }
 
 
 @media screen and (max-width: 990px) {
     .e-mail_text a {
-      font-size: 10px !important;
+      font-size: 15px !important;
     }
   }
 
 
 @media screen and (max-width: 400px) {
     .e-mail_text a {
-      font-size: 10px !important;
+      font-size: 15px !important;
+    }
+    .phn_box_heading p a {
+      font-size: 15px !important;
     }
   }
 /*  Contact End  */
@@ -1017,12 +1020,6 @@ line-height: 35px;
 
 /* Back To Top btn  */
 
-body {
-  position: relative;
-}
-html {
-  scroll-behavior: smooth;
-}
 .gobtn {
   border: 2px solid var(--primary-color);
   text-align: center;
