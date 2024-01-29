@@ -1132,7 +1132,7 @@ height: 140px;
 .select_box_btn {
     display: flex;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 30px;
 } 
 .select_box_btn  button {
     border: 1px solid rgba(150, 150, 150, 1);
@@ -1145,7 +1145,7 @@ height: 140px;
 
 @media screen and (max-width: 1300px) {
     .select_box_btn {
-    margin-top: 80px;
+    margin-top: 50px;
     }
   }
 @media screen and (max-width: 990px) {
@@ -1153,9 +1153,9 @@ height: 140px;
     margin-top: 10px;
     }
   }
-/* Upload Documents end */
-/*  admissison page end */
-/* footer start */
+/* Upload Documents End */
+/*  Admissison Page End */
+/* Footer Start */
 #footer {
   background: url(../image/footer_background_img_01.png), rgb(255, 229, 175);
   padding: 40px;
@@ -1410,9 +1410,9 @@ line-height: 35px;
   }
 }
 
-/* footer end */
+/* Footer End */
 
-/* copy_right start */
+/* Copy_Right Start */
 #copy_right {
   background: rgba(31, 36, 41, 1);
   padding: 5px;
@@ -1444,9 +1444,9 @@ line-height: 35px;
     font-size: 14px;
   }
 }
-/* copy_right end */
+/* Copy_Right End */
 
-/* aro btn  */
+/* Back To Top btn  */
 
 body {
   position: relative;
@@ -1461,7 +1461,7 @@ html {
   width: 50px;
   height: 50px;
   line-height: 55px;
-  bottom: 100px;
+  bottom: 30px;
   right: 40px;
 }
 .gobtn:hover {
@@ -1487,4 +1487,4 @@ html {
 .gobtn a {
   color: var(--bg-color);
 }
-/* aro btn  */
+/* Back To Top btn  */

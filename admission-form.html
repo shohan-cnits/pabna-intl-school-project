@@ -3,24 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pabna International School | Admission Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pabna International School | Admission Form</title>
 
-  <!-- Link Swiper's CSS Start -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Link Swiper's CSS End -->
+    <!-- Link Swiper's CSS Start -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS End -->
 
-  <!-- Font Awesome Icon CDN CSS Start -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Font Awesome Icon CDN CSS End -->
+    <!-- Font Awesome Icon CDN CSS Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Awesome Icon CDN CSS End -->
 
-  <!-- Main CSS Start -->
-  <link rel="stylesheet" href="./assets/css/admission-form.css" />
-  <!-- Main CSS End -->
+    <!-- Main CSS Start -->
+    <link rel="stylesheet" href="./assets/css/admission-form.css" />
+    <!-- Main CSS End -->
 
-  <!-- Bootstrap CSS Link Start -->
-  <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
-  <!-- Bootstrap CSS Link End -->
+    <!-- Bootstrap CSS Link Start -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Bootstrap CSS Link End -->
 </head>
 
 <body>
@@ -321,6 +321,7 @@
 
     <!-- Admissison Page Start -->
     <section id="admissison_page">
+        f
         <div class="container">
             <div class="admissison_page_content mt-4">
                 <div class="admissison_content_heading mt-3">
@@ -336,7 +337,7 @@
                         <div class="academic_Details_heading_line mt-3"></div>
                     </div>
 
-                    <div class="academic_details_content mt-5">
+                    <form id="academic_details_content mt-5">
                         <div class="row ">
                             <div class="col-lg-4 mt-3">
                                 <div class="academic_details_content_name">
@@ -367,8 +368,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="academic_details_content mt-4">
+                    </form>
+                    <form id="academic_details_content mt-4">
                         <div class="row ">
                             <div class="col-lg-4 mt-3">
                                 <div class="academic_details_content_date">
@@ -386,121 +387,159 @@
                                         <option value="">category-3</option>
                                     </select>
                                 </div>
+                    </form>
+                    <div class="col-lg-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Academic Details end -->
+
+        <!-- students Details start -->
+        <section id="students_details">
+            <div class="academic_Details_heading mt-5">
+                <div class="academic_Details_heading_text">
+                    <h1>Academic Details</h1>
+                </div>
+                <div class="academic_Details_heading_line mt-3"></div>
+            </div>
+            <form id="students_details_form mt-5">
+                <div class="row">
+                    <div class="col-lg-8 ">
+                        <div class="student_from_content">
+                            <div class="row">
+                                <div class="col-lg-6 mt-3">
+                                    <div class="students_details_form_name">
+                                        <label for="">First Name*</label> <br>
+                                        <input type="text" placeholder="Enter here...">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-3">
+                                    <div class="students_details_form_name">
+                                        <label for="">Last Name*</label> <br>
+                                        <input type="text" placeholder="Enter here...">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="row mt-4">
+                                <div class="col-lg-6 mt-3">
+                                    <div class="students_details_form_brithday">
+                                        <label for="">Birthday</label> <br>
+                                        <input type="date" placeholder="Enter here....">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-3">
+                                    <div class="students_details_form_gender">
+                                        <label for="">Gender</label> <br>
+                                        <select id="gender" name="gender">
+                                            <option value="" class="active">gender</option>
+                                            <option value="">Male</option>
+                                            <option value="">Female</option>
+                                            <option value="">Custom</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="students_details_from_img">
+                            <div class="students_details_from_content">
+                                <div class="students_details_from_content_photo">
+                                    <img src="./assets/image/form_img.png" alt="">
+                                </div>
+                                <div class="students_details_from_content_text">
+                                    <p>150x150</p>
+                                </div>
+                            </div>
+                            <div class="students_details_from_content_photo_btn mt-4">
+                                <label for="imgFile"><span>+</span> Upload Photo</label>
+                                <input type="file" name="" id="imgFile">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Academic Details end -->
+            </form>
+        </section>
+        <!-- students Details end -->
 
-                <!-- students Details start -->
-                <section id="students_details">
-                    <div class="academic_Details_heading mt-5">
-                        <div class="academic_Details_heading_text">
-                            <h1>Academic Details</h1>
-                        </div>
-                        <div class="academic_Details_heading_line mt-3"></div>
+        <!-- student about yourself start -->
+        <form id="student_biodate ">
+            <div class="row mt-4">
+                <div class="col-lg-4 mt-3">
+                    <div class="blood_group">
+                        <label for="">Blood Group</label> <br>
+                        <select id="blood" name="blood">
+                            <option value="" class="active">A+</option>
+                            <option value="">A-</option>
+                            <option value="">B+</option>
+                            <option value="">B-</option>
+                            <option value="">AB+</option>
+                            <option value="">AB-</option>
+                            <option value="">O</option>
+                            <option value="">O-</option>
+                        </select>
                     </div>
-                    <div class="students_details_form mt-5">
-                        <div class="row">
-                            <div class="col-lg-8 ">
-                                <div class="student_from_content">
-                                    <div class="row">
-                                        <div class="col-lg-6 mt-3">
-                                            <div class="students_details_form_name">
-                                                <label for="">First Name*</label> <br>
-                                                <input type="text" placeholder="Enter here...">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 mt-3">
-                                            <div class="students_details_form_name">
-                                                <label for="">Last Name*</label> <br>
-                                                <input type="text" placeholder="Enter here...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-4">
-                                        <div class="col-lg-6 mt-3">
-                                            <div class="students_details_form_brithday">
-                                                <label for="">Birthday</label> <br>
-                                                <input type="date" placeholder="Enter here....">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 mt-3">
-                                            <div class="students_details_form_gender">
-                                                <label for="">Gender</label> <br>
-                                                <select id="gender" name="gender">
-                                                    <option value="" class="active">gender</option>
-                                                    <option value="">Male</option>
-                                                    <option value="">Female</option>
-                                                    <option value="">Custom</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="students_details_from_img">
-                                    <div class="students_details_from_content">
-                                        <div class="students_details_from_content_photo">
-                                            <img src="./assets/image/form_img.png" alt="">
-                                        </div>
-                                        <div class="students_details_from_content_text">
-                                            <p>150x150</p>
-                                        </div>
-                                    </div>
-                                    <div class="students_details_from_content_photo_btn mt-4">
-                                        <label for="imgFile"><span>+</span> Upload Photo</label>
-                                        <input type="file" name="" id="imgFile">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="religion">
+                        <label for="">Religion</label> <br>
+                        <select id="religion" name="religion">
+                            <option value="" class="active">Muslim</option>
+                            <option value="">Hindu</option>
+                            <option value="">Chrestan</option>
+                        </select>
                     </div>
-                </section>
-                <!-- students Details end -->
-
-                <!-- student about yourself start -->
-                <section id="student_biodate ">
-                    <div class="row mt-4">
-                        <div class="col-lg-4 mt-3">
-                            <div class="blood_group">
-                                <label for="">Blood Group</label> <br>
-                                <select id="blood" name="blood">
-                                    <option value="" class="active">A+</option>
-                                    <option value="">A-</option>
-                                    <option value="">B+</option>
-                                    <option value="">B-</option>
-                                    <option value="">AB+</option>
-                                    <option value="">AB-</option>
-                                    <option value="">O</option>
-                                    <option value="">O-</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="religion">
-                                <label for="">Religion</label> <br>
-                                <select id="religion" name="religion">
-                                    <option value="" class="active">Muslim</option>
-                                    <option value="">Hindu</option>
-                                    <option value="">Chrestan</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="student_phn_number">
-                                <label for="">Student Mobile No</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="student_phn_number">
+                        <label for="">Student Mobile No</label> <br>
+                        <input type="text" placeholder="Enter here...">
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-4 mt-3">
-                            <div class="email">
-                                <label for="">Student Email</label> <br>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 mt-3">
+                    <div class="email">
+                        <label for="">Student Email</label> <br>
+                        <select id="email" name="email">
+                            <option value="" class="active">Student Email-01</option>
+                            <option value="">Student Email-02</option>
+                            <option value="">Student Email-03</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="mother_tongue">
+                        <label for="">Mother Tongue</label> <br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="nid_card">
+                        <label for="">Birth Certificate or NID No</label> <br>
+                        <input type="number" placeholder="Enter here...">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 mt-3">
+                    <div class="present_address">
+                        <label for="">Present Address</label> <br>
+                        <textarea name="" id="" placeholder="Enter present address..."></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="permanent_address">
+                        <label for="">Permanent Address</label> <br>
+                        <textarea name="" id="" placeholder="Enter permanent address..."></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="city">
+                                <label for="">City</label> <br>
                                 <select id="email" name="email">
                                     <option value="" class="active">Student Email-01</option>
                                     <option value="">Student Email-02</option>
@@ -508,266 +547,226 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="mother_tongue">
-                                <label for="">Mother Tongue</label> <br>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="nid_card">
-                                <label for="">Birth Certificate or NID No</label> <br>
-                                <input type="number" placeholder="Enter here...">
-                            </div>
-                        </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-4 mt-3">
-                            <div class="present_address">
-                                <label for="">Present Address</label> <br>
-                                <textarea name="" id="" placeholder="Enter present address..."></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="permanent_address">
-                                <label for="">Permanent Address</label> <br>
-                                <textarea name="" id="" placeholder="Enter permanent address..."></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="city">
-                                        <label for="">City</label> <br>
-                                        <select id="email" name="email">
-                                            <option value="" class="active">Student Email-01</option>
-                                            <option value="">Student Email-02</option>
-                                            <option value="">Student Email-03</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="state">
-                                        <label for="">State</label> <br>
-                                        <select id="state" name="state">
-                                            <option value="" class="active">State</option>
-                                            <option value="">State-02</option>
-                                            <option value="">State-03</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- student about yourself end -->
-
-                <!-- Previous Institute Details start -->
-                <section id="previous_institute">
-                    <div class="previous_institute_heading mt-5">
-                        <div class="previous_institute_heading_text">
-                            <h1>Previous Institute Details</h1>
-                        </div>
-                        <div class="previous_institute_heading_line mt-3"></div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="previous_institute_name">
-                                <label for="">Institute Name</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="qualification">
-                                <label for="">Qualification</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="remarks">
-                                <label for="">Remarks</label> <br>
-                                <textarea name="" id="" placeholder="Enter present address..."></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                        </div>
-                    </div>
-                </section>
-                <!-- Previous Institute Details end -->
-
-                <!-- Guardian Details start -->
-                <section id="guardian_details">
-                    <div class="guardian_details_heading mt-5">
-                        <div class="guardian_details_heading_text">
-                            <h1>Previous Institute Details</h1>
-                        </div>
-                        <div class="guardian_details_heading_line mt-3"></div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_name">
-                                <label for="">Guardian Name*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="relation">
-                                <label for="">Relation*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="father_name">
-                                <label for="">Father Name</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="mother_name">
-                                <label for="">Mother Name</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="occupation">
-                                <label for="">Occupation*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="income">
-                                <label for="">Income*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="education">
-                                <label for="">Education*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_e_mail">
-                                <label for="">Guardian E-mail*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_mobile">
-                                <label for="">Guardian Mobile No*</label> <br>
-                                <input type="number" placeholder="Enter here...">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_address">
-                                <label for="">Guardian Address*</label> <br>
-                                <input type="text" placeholder="Enter here...">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_city">
-                                <label for="">Guardian City</label> <br>
-                                <select id="city" name="email">
-                                    <option value="" class="active">Guardian City-01</option>
-                                    <option value="">Guardian City-02</option>
-                                    <option value="">Guardian City-03</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4">
-                            <div class="guardian_state">
-                                <label for="">Guardian State</label> <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="state">
+                                <label for="">State</label> <br>
                                 <select id="state" name="state">
-                                    <option value="" class="active">Guardian State-01</option>
-                                    <option value="">Guardian State-02</option>
-                                    <option value="">Guardian State-03</option>
+                                    <option value="" class="active">State</option>
+                                    <option value="">State-02</option>
+                                    <option value="">State-03</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-9 mt-">
-                            <div class="guardian_photo">
-                                <label for="">Guardian Photo</label> <br>
-                                <input type="text" placeholder="Choose file...">
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mt-4">
-                            <div class="guardian_photo_btn">
-                                <label for="imgFile"> <span style="font-size: 16px;">+ </span>Upload Photo</label> <br>
-                                <input type="file" id="imgFile">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Guardian Details end -->
-
-                <!-- Upload Documents start -->
-                <section id="upload_documents">
-                    <div class="upload_documents_heading mt-5">
-                        <div class="upload_documents_heading_text">
-                            <h1>Upload Documents</h1>
-                        </div>
-                        <div class="upload_documents_heading_line mt-3"></div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-9 ">
-                            <div class="upload_document">
-                                <label for="">Upload Documents*</label> <br>
-                                <input type="text" placeholder="Choose file...">
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mt-4">
-                            <div class="upload_document_btn">
-                                <label for="imgFile"> <span style="font-size: 16px;">+ </span>Upload Documents</label>
-                                <br>
-                                <input type="file" id="imgFile">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="col-lg-4 mt-3">
-                            <div class="select_box">
-                                <div class="select_box_item">
-                                    <input type="checkbox" class="mt">
-                                    <label for="">I’m not a Robot</label>
-                                </div>
-                                <div class="select_box_item_text">
-                                    <img src="./assets/image/documents.png" alt="">
-                                    <h3>reCAPCHA</h3>
-                                    <p><a href="#">Privacy</a>Terms</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <div class="select_box_btn">
-                                <button>SUBMIT</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Upload Documents end -->
+                </div>
             </div>
+        </form>
+        <!-- student about yourself end -->
+
+        <!-- Previous Institute Details start -->
+        <section id="previous_institute">
+            <div class="previous_institute_heading mt-5">
+                <div class="previous_institute_heading_text">
+                    <h1>Previous Institute Details</h1>
+                </div>
+                <div class="previous_institute_heading_line mt-3"></div>
+            </div>
+
+            <form action="" id="previous_institute_content">
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="previous_institute_name">
+                            <label for="">Institute Name</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="qualification">
+                            <label for="">Qualification</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="remarks">
+                            <label for="">Remarks</label> <br>
+                            <textarea name="" id="" placeholder="Enter present address..."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+        <!-- Previous Institute Details end -->
+
+        <!-- Guardian Details start -->
+        <section id="guardian_details">
+            <div class="guardian_details_heading mt-5">
+                <div class="guardian_details_heading_text">
+                    <h1>Previous Institute Details</h1>
+                </div>
+                <div class="guardian_details_heading_line mt-3"></div>
+            </div>
+            <form action="" id="guardian_details_content">
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_name">
+                            <label for="">Guardian Name*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="relation">
+                            <label for="">Relation*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="father_name">
+                            <label for="">Father Name</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="mother_name">
+                            <label for="">Mother Name</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="occupation">
+                            <label for="">Occupation*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="income">
+                            <label for="">Income*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="education">
+                            <label for="">Education*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_e_mail">
+                            <label for="">Guardian E-mail*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_mobile">
+                            <label for="">Guardian Mobile No*</label> <br>
+                            <input type="number" placeholder="Enter here...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_address">
+                            <label for="">Guardian Address*</label> <br>
+                            <input type="text" placeholder="Enter here...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_city">
+                            <label for="">Guardian City</label> <br>
+                            <select id="city" name="email">
+                                <option value="" class="active">Guardian City-01</option>
+                                <option value="">Guardian City-02</option>
+                                <option value="">Guardian City-03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="guardian_state">
+                            <label for="">Guardian State</label> <br>
+                            <select id="state" name="state">
+                                <option value="" class="active">Guardian State-01</option>
+                                <option value="">Guardian State-02</option>
+                                <option value="">Guardian State-03</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-9 mt-">
+                        <div class="guardian_photo">
+                            <label for="">Guardian Photo</label> <br>
+                            <input type="text" placeholder="Choose file...">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="guardian_photo_btn">
+                            <label for="imgFile"> <span style="font-size: 16px;">+ </span>Upload Photo</label> <br>
+                            <input type="file" id="imgFile">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Guardian Details end -->
+
+        <!-- Upload Documents start -->
+        <section id="upload_documents">
+            <div class="upload_documents_heading mt-5">
+                <div class="upload_documents_heading_text">
+                    <h1>Upload Documents</h1>
+                </div>
+                <div class="upload_documents_heading_line mt-3"></div>
+            </div>
+            <form action="" id="upload_documents_content">
+                <div class="row mt-5">
+                    <div class="col-lg-9 ">
+                        <div class="upload_document">
+                            <label for="">Upload Documents*</label> <br>
+                            <input type="text" placeholder="Choose file...">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="upload_document_btn">
+                            <label for="imgFile"> <span style="font-size: 16px;">+ </span>Upload Documents</label>
+                            <br>
+                            <input type="file" id="imgFile">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-5">
+                    <div class="col-lg-4 ">
+                        <div class="select_box_btn">
+                            <button>SUBMIT</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                       
+                    </div>
+                    <div class="col-lg-4">
+                       
+                    </div>
+                </div>
+            </form>
+
+        </section>
+        <!-- Upload Documents end -->
+        </div>
         </div>
     </section>
     <!-- Admissison Page End -->
@@ -889,9 +888,9 @@
     <script src="./js/app.js"></script>
     <!-- Swiper JS Link -->
 
-  <!-- JS File link -->
-  <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
-  <!-- JS File link -->
+    <!-- JS File link -->
+    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
+    <!-- JS File link -->
 </body>
 
 </html>
