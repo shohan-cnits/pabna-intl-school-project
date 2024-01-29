@@ -655,6 +655,53 @@
 
 /* Notice Board End */
 
+/* Institution History Start */
+
+.institution_content {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  aspect-ratio: 2/1;
+  background: var(--bg-color);
+  padding: 30px;
+}
+
+.institution_content_heading h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: var(--primary-font);
+  line-height: 30px;
+}
+
+.institution_content_img {
+  width: 100%;
+}
+
+.institution_content_img img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.institution_content_text p {
+  font-size: 16px;
+  width: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .institution_content_img img {
+    width: 100%;
+  }
+
+  .institution_content_text p {
+    width: 100%;
+  }
+}
+
+
+ /* Institution History end */ 
 
 
 /* Info Card Box Start */
@@ -841,7 +888,8 @@
 
 /* Institution Gallery End */
 
-/* your location start  */
+/* Institution Location Start */
+
 .your_location_btn {
   width: 100%;
   border: 1px solid var(--primary-color);
@@ -869,11 +917,10 @@
   }
 }
 
-/* your location end */
+/* Institution Location End */
 
+/* Principal Message Start */
 
-
-/* principal_content start */
 .principal_contant_btn {
   width: 100%;
   border: 1px solid var(--primary-color);
@@ -929,53 +976,12 @@
   text-decoration: underline;
 }
 
-.institution_content {
-  border: 1px solid var(--primary-color);
-  width: 100%;
-  aspect-ratio: 2/1;
-  background: var(--bg-color);
-  padding: 30px;
-}
-
-.institution_content_heading h1 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 800;
-  font-family: var(--primary-font);
-  line-height: 30px;
-}
-
-.institution_content_img {
-  width: 100%;
-}
-
-.institution_content_img img {
-  width: 600px;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-.institution_content_text p {
-  font-size: 16px;
-  width: 600px;
-  margin: auto;
-}
-
-@media screen and (max-width: 1300px) {
-  .institution_content_img img {
-    width: 100%;
-  }
-
-  .institution_content_text p {
-    width: 100%;
-  }
-}
-
-/* principal_content end */
 
 
-/* admission box start */
+/* Principal Message End */
+
+
+/* Admission Box Start */
 
 .admission_content {
   width: 100%;
@@ -1080,9 +1086,9 @@
   border: 1px solid var(--primary-color);
 }
 
-/* admission box end */
+/* Admission Box  End */
 
-/* e appointment start */
+/* E Service Start */
 .appointment_btn {
   width: 100%;
   border: 1px solid var(--primary-color);
@@ -1155,19 +1161,19 @@
   width: 100%;
 }
 
-/* audio box */
+/* Audio Box */
 .song_card_content audio {
   width: 100%;
   background: var(--bg-color) !important;
 }
 
-/* audio box */
+/* Audio Box */
 
-/* e appointment end */
+/* E Service End */
 
-/* all content end  */
+/* All Content End  */
 
-/* footer start */
+/* Footer Start */
 #footer {
   background: url(../image/footer_background_img_01.png), rgb(255, 229, 175);
   padding: 40px;
@@ -1432,9 +1438,9 @@
   }
 }
 
-/* footer end */
+/* Footer End */
 
-/* copy_right start */
+/* Copy_Right Start */
 #copy_right {
   background: rgba(31, 36, 41, 1);
   padding: 5px;
@@ -1471,9 +1477,9 @@
   }
 }
 
-/* copy_right end */
+/* Copy_Right End */
 
-/* aro btn  */
+/* Back To Top btn  */
 
 body {
   position: relative;
@@ -1490,7 +1496,7 @@ html {
   width: 50px;
   height: 50px;
   line-height: 55px;
-  bottom: 100px;
+  bottom: 30px;
   right: 40px;
 }
 
@@ -1515,4 +1521,4 @@ html {
   color: var(--bg-color);
 }
 
-/* aro btn  */
+/* Back To Top btn  */
