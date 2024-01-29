@@ -15,9 +15,6 @@
   font-family: var(--primary-font);
 }
 
-
-
-
 /* Topbar Start */
 #topbar {
   background: var(--primary-color);
@@ -267,6 +264,11 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .nav_items li a {
@@ -299,14 +301,12 @@
   z-index: 999 !important;
 }
 
-.nav_items li:hover>ul {
+.nav_items li:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
   display: block;
 }
-
-
 
 .nav_items ul li {
   padding: 0 !important;
@@ -331,6 +331,11 @@
   display: block;
   color: var(--primary-color);
   padding: 10px 8px;
+  margin: 0 !important;
+}
+
+.nav-item .nav-link {
+  margin: 0 !important;
 }
 
 .nav_items li ul li:hover {
@@ -341,36 +346,47 @@
   text-decoration: none !important;
 }
 
+.nav_toggle_btn {
+  display: block;
+  width: 50px;
+  margin: auto;
+  padding: 20px 0;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+.nav_toggle_btn i {
+  color: var(--bg-color);
+  font-size: 1.6em;
+}
+
 @media screen and (max-width: 1200px) {
   .nav_items li a {
-    width: 100%;
+    font-size: 16px !important;
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .nav_items li a {
-    width: 100%;
-    margin-left: 10px;
+@media screen and (max-width: 990px) {
+  .nav_toggle_btn {
+    display: block;
   }
 
   .nav_items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex !important;
-    justify-content: space-between;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    transition: visibility 1s;
+    -webkit-transition: visibility 1s;
+    -moz-transition: visibility 1s;
+    -ms-transition: visibility 1s;
+    -o-transition: visibility 1s;
+    z-index: 9999 !important;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .nav_items li a {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1010px) {
-  .nav_items li a {
-    width: 100%;
+  .nav_items.active {
+    visibility: visible;
+    height: auto;
   }
 }
 
@@ -462,7 +478,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-
   .swiper-button-prev {
     left: 40%;
   }
@@ -470,7 +485,6 @@
   .swiper-button-next {
     left: 57%;
   }
-
 }
 
 @media screen and (max-width: 990px) {
@@ -637,9 +651,11 @@
 }
 
 .notice_broad_btn:hover {
-  background: linear-gradient(120deg,
-      rgba(0, 44, 83, 1),
-      rgba(206, 133, 34, 1));
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
   border: 1px solid var(--bg-color);
 }
 
@@ -700,9 +716,7 @@
   }
 }
 
-
- /* Institution History end */ 
-
+/* Institution History end */
 
 /* Info Card Box Start */
 
@@ -796,7 +810,6 @@
     width: 100%;
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 575px) {
@@ -851,7 +864,8 @@
   transition: 0.5s ease-in-out;
 }
 
-.institution_gallery_content_img:hover .institution_gallery_content_img_overlay {
+.institution_gallery_content_img:hover
+  .institution_gallery_content_img_overlay {
   height: 30%;
 }
 
@@ -875,9 +889,11 @@
 }
 
 .institution_gallery_content_btn:hover {
-  background: linear-gradient(120deg,
-      rgba(0, 44, 83, 1),
-      rgba(206, 133, 34, 1));
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
   border: none;
 }
 
@@ -976,10 +992,7 @@
   text-decoration: underline;
 }
 
-
-
 /* Principal Message End */
-
 
 /* Admission Box Start */
 
@@ -997,7 +1010,7 @@
   gap: 10px;
   background: #ce8522;
   cursor: pointer;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .admission_content_cards:hover {
@@ -1009,16 +1022,13 @@
   cursor: pointer;
 }
 
-
-
-
 .admission_content_card_img {
   width: 45px;
   height: 45px;
   border: 1px solid var(--bg-color);
   border-radius: 50px;
   background: var(--bg-color);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .admission_content_card_img:hover {
@@ -1027,7 +1037,6 @@
   border: 1px solid var(--bg-color);
   border-radius: 50px;
   background: var(--bg-color);
-
 }
 
 .admission_card_imgs {
@@ -1073,7 +1082,7 @@
 .admission_content_card_texts h2 a {
   color: var(--primary-colo) !important;
   font-weight: 500;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .admission_content_card_texts h2 a:hover {
@@ -1199,8 +1208,6 @@
   margin: auto;
   text-align: center;
   justify-content: center;
-
-
 }
 
 .footer_content_menu_icon a {
@@ -1222,9 +1229,11 @@
 }
 
 .footer_content_menu_icon a:hover {
-  background: linear-gradient(120deg,
-      rgba(0, 44, 83, 1),
-      rgba(206, 133, 34, 1));
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
   border: 1px solid transparent;
 }
 
@@ -1244,14 +1253,12 @@
 
   .footer_content_menu_icon {
     display: inline-block;
-
   }
 
   .footer_content_menu_icon a {
     margin-left: 5px;
     margin-top: 20px;
   }
-
 }
 
 .footer_address_heading h1 {
@@ -1281,7 +1288,6 @@
 
 .footer_address_img img {
   width: 22px;
-
 }
 
 .footer_address_text h2 {
@@ -1294,15 +1300,12 @@
 @media screen and (max-width: 1200px) {
   .footer_address_text h2 {
     font-size: 15px;
-
   }
-
 }
 
 @media screen and (max-width: 1015px) {
   .footer_address_text h2 {
     font-size: 14px;
-
   }
 
   .footer_address_heading h1 {
@@ -1313,7 +1316,6 @@
 @media screen and (max-width: 990px) {
   .footer_address_text h2 {
     font-size: 16px;
-
   }
 
   .footer_address_heading h1 {
@@ -1374,7 +1376,7 @@
   font-size: 16px;
   color: var(--bg-color);
   font-weight: 800;
-  transition: .5s ease;
+  transition: 0.5s ease;
   text-decoration: none;
 }
 
@@ -1382,33 +1384,28 @@
   font-size: 16px;
   color: var(--bg-color);
   font-weight: 800;
-  transition: .5s ease;
+  transition: 0.5s ease;
   text-decoration: underline;
 }
 
 .footer_page_content_img_overlay_text p {
   font-size: 14px;
   color: var(--bg-color);
-
 }
 
 .footer_page_content_img_overlay_text p a {
   font-size: 14px;
   color: var(--bg-color);
-  transition: .5s ease;
+  transition: 0.5s ease;
   text-decoration: none;
-
 }
 
 .footer_page_content_img_overlay_text p a:hover {
   font-size: 14px;
   color: var(--bg-color);
-  transition: .5s ease;
+  transition: 0.5s ease;
   text-decoration: underline;
-
 }
-
-
 
 @media screen and (max-width: 780px) {
   .footer_content_icon_img {
@@ -1481,14 +1478,6 @@
 
 /* Back To Top btn  */
 
-body {
-  position: relative;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .gobtn {
   border: 2px solid var(--primary-color);
   text-align: center;
@@ -1498,12 +1487,15 @@ html {
   line-height: 55px;
   bottom: 30px;
   right: 40px;
+  display: none;
 }
 
 .gobtn:hover {
-  background: linear-gradient(120deg,
-      rgba(0, 44, 83, 1),
-      rgba(206, 133, 34, 1));
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
   border: 2px solid transparent !important;
 }
 
