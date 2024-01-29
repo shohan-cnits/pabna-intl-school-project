@@ -223,9 +223,9 @@ height: 140px;
   }
 }
 
-/* header end */
+/* Header end */
 
-/* navbar start */
+/* Navbar Start */
 
 #navbar {
   background-color: #ffa155 !important;
@@ -343,9 +343,9 @@ height: 140px;
   }
 }
 
-/* navbar end */
+/* Navbar End */
 
-/* hero start */
+/* Hero Start */
 #contact_hero {
     background: url(../image/hero_bg_01.png);
     width: 100%;
@@ -367,9 +367,9 @@ height: 140px;
 }
 
 
-/* hero  end */
+/* Hero  End */
 
-/*  contact start  */
+/*  Contact Start  */
 #main_contact {
     background: url(../image/web_bd_bg-01.png);
     padding: 40px 0;
