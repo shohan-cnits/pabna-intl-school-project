@@ -174,8 +174,11 @@
   }
 
   .header_logo img {
-    display: block;
-    margin: auto;
+     display: block;
+     margin: auto;
+      width: 140px;
+      height: 140px;
+   
   }
 }
 
@@ -260,11 +263,6 @@
 
 }
 
-/* @media screen and (max-width: 1300px) {
-  #navbar {
-    display: none;
-  }
-} */
 
 .nav_items {
   margin: 0;
@@ -272,11 +270,7 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+
 }
 
 .nav_items li a {
@@ -408,11 +402,6 @@
     display: block;
     visibility: hidden;
     height: 0;
-    transition: visibility 1s;
-    -webkit-transition: visibility 1s;
-    -moz-transition: visibility 1s;
-    -ms-transition: visibility 1s;
-    -o-transition: visibility 1s;
     z-index: 9999 !important;
   }
 

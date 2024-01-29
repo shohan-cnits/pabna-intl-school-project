@@ -63,7 +63,7 @@
     </section>
     <!-- Topbar End -->
 
-    <!-- Header Start -->
+    <!-- Branding Header Start  -->
     <section id="header">
         <div class="container">
             <div class="header_logo">
@@ -90,12 +90,13 @@
             </div>
         </div>
     </section>
-    <!-- Header End -->
+    <!-- Branding Header End  -->
 
     <!-- Navbar Start -->
     <section id="main_navbar">
         <nav id="navbar">
             <div class="container">
+                <span class="nav_toggle_btn"><i class="fa-solid fa-bars-staggered"></i></span>
                 <ul class="nav_items">
                     <li class="nav-item"><a href="./index.html">হোম</a></li>
                     <li>
@@ -118,7 +119,7 @@
                                 <a class="nav-link" href="#">কমপ্লেক্স</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">শিক্ষক মন্ডলীর তথ্যাবলী</a>
+                                <a class="nav-link" href="./teachers-information.html">শিক্ষক মন্ডলীর তথ্যাবলী</a>
                             </li>
                         </ul>
                     </li>
@@ -290,7 +291,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li></li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">মিডিয়া<img src="./assets/icon/Vector.svg" alt="" /></a>
                         <ul>
@@ -309,7 +309,7 @@
     </section>
     <!-- Navbar End -->
 
-    <!-- Hero start -->
+    <!-- Hero Start -->
     <section id="admissison_hero">
         <div class="container">
             <div class="admissison_hero_content">
@@ -317,18 +317,17 @@
             </div>
         </div>
     </section>
-    <!-- Hero end -->
+    <!-- Hero End -->
 
     <!-- Admissison Page Start -->
     <section id="admissison_page">
-        f
         <div class="container">
             <div class="admissison_page_content mt-4">
                 <div class="admissison_content_heading mt-3">
                     <h1>New Admission</h1>
                 </div>
 
-                <!-- Academic Details start -->
+                <!-- Academic Details Start -->
                 <div class="academic_Details mt-3">
                     <div class="academic_Details_heading">
                         <div class="academic_Details_heading_text">
@@ -393,10 +392,10 @@
                 </div>
             </div>
         </div>
-        <!-- Academic Details end -->
+        <!-- Academic Details End -->
 
-        <!-- students Details start -->
-        <section id="students_details">
+        <!-- Students Details Start -->
+        <div id="students_details">
             <div class="academic_Details_heading mt-5">
                 <div class="academic_Details_heading_text">
                     <h1>Academic Details</h1>
@@ -460,10 +459,10 @@
                     </div>
                 </div>
             </form>
-        </section>
-        <!-- students Details end -->
+        </div>
+        <!-- Students Details End -->
 
-        <!-- student about yourself start -->
+        <!-- Student About YourSelf Start -->
         <form id="student_biodate ">
             <div class="row mt-4">
                 <div class="col-lg-4 mt-3">
@@ -563,10 +562,10 @@
                 </div>
             </div>
         </form>
-        <!-- student about yourself end -->
+        <!-- Student About YourSelf End -->
 
-        <!-- Previous Institute Details start -->
-        <section id="previous_institute">
+        <!-- Previous Institute Details Start -->
+        <div id="previous_institute">
             <div class="previous_institute_heading mt-5">
                 <div class="previous_institute_heading_text">
                     <h1>Previous Institute Details</h1>
@@ -601,11 +600,11 @@
                 </div>
             </form>
 
-        </section>
-        <!-- Previous Institute Details end -->
+        </div>
+        <!-- Previous Institute Details End -->
 
-        <!-- Guardian Details start -->
-        <section id="guardian_details">
+        <!-- Guardian Details Start -->
+        <div id="guardian_details">
             <div class="guardian_details_heading mt-5">
                 <div class="guardian_details_heading_text">
                     <h1>Previous Institute Details</h1>
@@ -721,11 +720,11 @@
                     </div>
                 </div>
             </form>
-        </section>
-        <!-- Guardian Details end -->
+        </div>
+        <!-- Guardian Details End -->
 
-        <!-- Upload Documents start -->
-        <section id="upload_documents">
+        <!-- Upload Documents Start -->
+        <div id="upload_documents">
             <div class="upload_documents_heading mt-5">
                 <div class="upload_documents_heading_text">
                     <h1>Upload Documents</h1>
@@ -748,7 +747,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="row mt-5">
                     <div class="col-lg-4 ">
                         <div class="select_box_btn">
@@ -756,16 +755,16 @@
                         </div>
                     </div>
                     <div class="col-lg-4 ">
-                       
+
                     </div>
                     <div class="col-lg-4">
-                       
+
                     </div>
                 </div>
             </form>
 
-        </section>
-        <!-- Upload Documents end -->
+        </div>
+        <!-- Upload Documents End -->
         </div>
         </div>
     </section>
@@ -831,7 +830,7 @@
                                             src="./assets/icon/footer_address_gmail_icon_03.svg" alt="" /></a>
                                 </div>
                                 <div class="footer_address_text">
-                                    <h2>pabnainternationalschool@gmail.com</h2>
+                                    <h2>pabnaintlschl@gmail.com</h2>
                                 </div>
                             </div>
                         </div>
@@ -880,8 +879,13 @@
     <!-- Copy Right End -->
 
     <!-- Back To Top btn -->
-    <a class="gobtn" href="#"><i class="fa-solid fa-arrow-up " style="color: #0e2d62"></i></a>
+    <a class="gobtn" id="bt-top" href="#"><i class="fa-solid fa-arrow-up" style="color: #0e2d62"></i></a>
     <!-- Back To Top btn -->
+
+    <!-- Scripts -->
+    <script src="./js/navbar.js"></script>
+    <!-- Scripts -->
+
 
     <!-- Swiper JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

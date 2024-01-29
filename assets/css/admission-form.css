@@ -15,7 +15,7 @@
   font-family: var(--primary-font);
 }
 
-/* topbar start */
+/* Topbar Start */
 #topbar {
   background: var(--primary-color);
 }
@@ -62,26 +62,30 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 990px) {
   #topbar {
     display: none;
   }
 }
 
-/* topbar end */
+/* Topbar End */
 
-/* header start */
+/* Branding Header Start  */
 #header {
   background: url(../image/web_bd_bg.png);
   padding: 20px 0px;
   margin: 0px;
   background-repeat: repeat;
 }
+
+
 .header_border_right {
   border-right: 1px solid #000000;
   padding-right: 10px;
   display: inline-block;
 }
+
+
 .header_logo {
   position: absolute;
 }
@@ -90,9 +94,13 @@
   height: 180px;
   z-index: 999;
 }
+
+
 .header_wapper {
   position: relative;
 }
+
+
 .header_content h1 {
   font-weight: 800;
   font-size: 40px;
@@ -101,6 +109,8 @@
   color: var(--primary-color);
   font-family: var(--primary-font);
 }
+
+
 .header_content h2 {
   font-size: 27px;
   line-height: 35px;
@@ -109,6 +119,7 @@
   font-weight: 800;
   text-align: center;
 }
+
 .header_content p {
   font-size: 18px;
   line-height: 30px;
@@ -150,6 +161,8 @@
     line-height: 30px;
   }
 }
+
+
 @media screen and (max-width: 990px) {
   .header_logo {
    position: relative;
@@ -157,6 +170,8 @@
   .header_logo img {
 display: block;
 margin: auto;
+width: 140px;
+height: 140px;
   }
 }
 
@@ -180,12 +195,14 @@ margin: auto;
   .header_logo {
    position: relative;
   }
+
   .header_logo img {
 display: block;
 margin: auto;
 width: 140px;
 height: 140px;
   }
+
 } 
 
 @media screen and (max-width: 500px) {
@@ -193,43 +210,55 @@ height: 140px;
     font-size: 16px;
     line-height: 20px;
   }
+
   .header_content h1 {
     text-align: center;
     font-size: 20px;
     line-height: 25px;
   }
+
   .header_content p {
     text-align: center;
     font-size: 12px;
   }
+
 }
+
 @media screen and (max-width: 400px) {
   .header_content h1 {
     text-align: center;
     font-size: 18px;
     line-height: 25px;
   }
+
   .header_content p {
     text-align: center;
     font-size: 12px;
   }
+
   .header_content_heading_address a {
     font-size: 14px !important;
   }
+
 }
+
+
 @media screen and (max-width: 400px) {
   .header_content_heading_address a {
     font-size: 16px;
   }
 }
 
-/* header end */
+/* Branding Header End */
 
-/* navbar start */
+
+/* Navbar Start */
 
 #navbar {
   background-color: #ffa155 !important;
+
 }
+
 
 .nav_items {
   margin: 0;
@@ -237,6 +266,7 @@ height: 140px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+
 }
 
 .nav_items li a {
@@ -276,14 +306,13 @@ height: 140px;
   display: block;
 }
 
-
-
 .nav_items ul li {
   padding: 0 !important;
 }
 
 .nav_items ul li a {
   width: 100%;
+
   font-weight: 500;
   color: #000000;
   z-index: 999 !important;
@@ -301,6 +330,11 @@ height: 140px;
   display: block;
   color: var(--primary-color);
   padding: 10px 8px;
+  margin: 0 !important;
+}
+
+.nav-item .nav-link {
+  margin: 0 !important;
 }
 
 .nav_items li ul li:hover {
@@ -311,45 +345,79 @@ height: 140px;
   text-decoration: none !important;
 }
 
+.nav_toggle_btn {
+  display: block;
+  width: 50px;
+  margin: auto;
+  padding: 20px 0;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+.nav_toggle_btn i {
+  color: var(--bg-color);
+  font-size: 1.6em;
+}
+
 @media screen and (max-width: 1200px) {
   .nav_items li a {
-    width: 100%;
+    font-size: 16px !important;
   }
+  .nav_items ul {
+    width: 170px;
+  }
+
 }
 
 @media screen and (max-width: 1300px) {
   .nav_items li a {
-    width: 100%;
-    margin-left: 10px;
+    font-size: 16px !important;
   }
+  .nav_items ul {
+    width: 200px;
+  }
+
+}
+@media screen and (max-width: 1050px) {
+  .nav_items li a {
+    font-size: 16px !important;
+  }
+  .nav_items ul {
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .nav_toggle_btn {
+    display: block;
+  }
+
   .nav_items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex !important;
-    justify-content: space-between;
+    display: block;
+    visibility: hidden;
+    height: 0;
+
+    z-index: 9999 !important;
+  }
+
+  .nav_items.active {
+    visibility: visible;
+    height: auto;
+  }
+  .nav_items ul {
+    width: 250px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .nav_items li a {
-    width: 100%;
-  }
-}
+/* Navbar End */
 
-@media screen and (max-width: 1010px) {
-  .nav_items li a {
-    width: 100%;
-  }
-}
-
-/* navbar end */
-
-/* hero start */
+/* Hero Start */
 #admissison_hero {
     background: url(../image/hero_bg_01.png);
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,16 +430,16 @@ height: 140px;
    
 }
 .admissison_hero_content h1 {
-    margin-top: 40vh;
+    margin-top: 30vh;
     color: var(--bg-color);
 }
-/* hero  end */
+/* Hero End */
 
-/*  admissison page start */
+/*  Admissison Page Start */
+
 #admissison_page {
     background-image: url(../image/web_bd_bg-01.png);
     background-position: cover;
-    /* background-size: cover; */
     padding: 20px 0;
 }
 
@@ -390,7 +458,7 @@ height: 140px;
     border-bottom: 2px solid var(--primary-color);
 }
 
-/* Academic Details start */
+/* Academic Details Start */
 .academic_Details_heading {
     display: flex;
     flex-direction: row;
@@ -489,9 +557,9 @@ height: 140px;
     }
   }
 
-/* Academic Details end */
+/* Academic Details End */
 
-/* students Details start */
+/* Students Details Start */
 .academic_Details_heading {
     display: flex;
     flex-direction: row;
@@ -602,9 +670,9 @@ height: 140px;
     }
   }
 
-/* students Details end */
+/* Students Details End */
 
-/* student about yourself start */
+/* Student About YourSelf Start */
 .blood_group label {
     font-size: 20px;
     color: #000000;
@@ -748,9 +816,9 @@ height: 140px;
   }
 
 
-/* student about yourself end */
+/* Student About YourSelf End */
 
-/*  Previous Institute Details start */
+/* Previous Institute Details Start */
 .previous_institute_heading {
     display: flex;
     flex-direction: row;
@@ -812,9 +880,9 @@ height: 140px;
     outline: none;
     aspect-ratio: 2/1;
 }
-/*  Previous Institute Details end */
+/*  Previous Institute Details End  */
 
-/* Guardian Details start */
+/* Guardian Details Start */
 .guardian_details_heading {
     display: flex;
     flex-direction: row;
@@ -1029,9 +1097,9 @@ height: 140px;
     color: var(--primary-color);
     font-weight: 800;
 }
-/* Guardian Details end */
+/* Guardian Details End */
 
-/* Upload Documents start */
+/* Upload Documents Start */
 .upload_documents_heading {
     display: flex;
     flex-direction: row;
@@ -1155,6 +1223,7 @@ height: 140px;
   }
 /* Upload Documents End */
 /*  Admissison Page End */
+
 /* Footer Start */
 #footer {
   background: url(../image/footer_background_img_01.png), rgb(255, 229, 175);
