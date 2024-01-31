@@ -495,6 +495,132 @@ width: 350px;
 }
 /* Galler Heading End */
 
+/* Galler Institute  Start */
+#galler_institute {
+  
+    background: url(../image/web_bd_bg-01.png);
+}
+
+.galler_institute_wrapper {
+    background: var(--bg-color);
+   width: 100%;
+    position: relative;
+}
+
+.galler_institute_wrapper .wrapper_slider_icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper_slider_icon:first-child{
+    left: 0;
+    background: linear-gradient(90deg,#ffffff 70%,transparent);
+    /* display: none; */
+
+}
+
+.wrapper_slider_icon:last-child{
+    right: 0;
+    background: linear-gradient( -90deg,#ffffff 70%,transparent);
+  justify-content: flex-end;
+}
+
+.wrapper_slider_icon:last-child i{
+margin-right: 15px;
+
+}
+.wrapper_slider_icon:first-child i{
+margin-left: 15px;
+
+}
+
+.wrapper_slider_icon i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 50%;
+    transition:  .5s ease-in-out;
+}
+
+.wrapper_slider_icon i:hover{
+    background: linear-gradient(
+        150deg,
+        rgba(0, 44, 83, 1),
+        rgba(206, 133, 34, 1)
+      );
+      color: #fff !important;
+      border: #fff;
+}
+
+.wrapper_tabs_box  {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.wrapper_tabs_box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+.wrapper_tabs_box  .tab_btn{
+white-space: nowrap;
+font-size: 1.0rem;
+padding: 10px 20px;
+cursor: pointer;
+font-weight: 700;
+border: 1px solid #c0bfbf;
+transition:  .5s ease-in-out;
+}
+
+.wrapper_tabs_box.dragging  .tab_btn {
+  user-select: none;
+  pointer-events: none;
+}
+  
+.tab_btn a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+
+
+/* .wrapper_tabs_box  .tab_btn:hover {
+    background: linear-gradient(
+        150deg,
+        rgba(0, 44, 83, 1),
+        rgba(206, 133, 34, 1)
+       
+      );
+      color: var(--bg-color) !important;
+} */
+
+.wrapper_tabs_box .active {
+  background: linear-gradient(
+    150deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+   
+  );
+  color: var(--bg-color);
+}
+
+
+
+/* Galler Institute  Start */
 
 /* Footer Start */
 #footer {
