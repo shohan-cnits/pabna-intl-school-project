@@ -307,13 +307,28 @@ height: 140px;
 
 .nav_items ul li {
   padding: 0 !important;
+  border-left: 2px solid var(--bg-color);
+  transition: .5s ease-in-out;
+
+}
+.nav_items ul li:hover {
+  padding: 0 !important;
+border-left: 2px solid var(--last-color);
 }
 
 .nav_items ul li a {
   width: 100%;
-
   font-weight: 500;
   color: #000000;
+  z-index: 999 !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  transition: .5s ease-in-out;
+}
+.nav_items ul li a:hover{
+  width: 100%;
+  font-weight: 500;
+  color: var(--last-color);
   z-index: 999 !important;
   font-size: 16px !important;
   text-decoration: none !important;
