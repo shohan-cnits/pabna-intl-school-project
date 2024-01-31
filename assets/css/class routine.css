@@ -522,6 +522,78 @@ padding: 4px;
 .class_routine_img img{
     width: 100%;
 }
+
+.class_routine_btn {
+  padding: 20px;
+}
+
+.class_routine_btn_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.class_routine_btn_text {
+     border: 1px solid var(--last-color);
+  display: inline-block;
+  margin: auto; 
+  padding: 5px 20px;
+  background: rgba(206, 133, 34, 1);
+  transition: .5s ease-in-out;
+}
+
+.class_routine_btn_text a:nth-child(1){
+  width: 35px !important;
+  height: 35px !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 50% !important;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  line-height: 30px;
+  padding-left: 5px;
+  background: #ffffff;
+  transition: .5s ease-in-out;
+
+}
+
+.class_routine_btn_text a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--bg-color);
+  font-weight: 500;
+  transition: .5s ease-in-out;
+}
+
+
+.class_routine_btn_text:hover.class_routine_btn_text a:nth-child(1) 
+ {
+  background: rgba(206, 133, 34, 1) !important;
+
+}
+.class_routine_btn_text:hover.class_routine_btn_text a:nth-child(1) svg path
+ {
+fill: var(--bg-color);
+
+}
+
+.class_routine_btn_text:hover {
+  background: var(--bg-color);
+}
+
+.class_routine_btn_text:hover.class_routine_btn_text a {
+color: var(--primary-color);
+}
+
+@media screen and (max-width: 500px) {
+  .class_routine_btn_text a {
+   font-size: 13px;
+    }
+ 
+}
+
+
 /* Class Routine End */
 
 /* Footer Start */
