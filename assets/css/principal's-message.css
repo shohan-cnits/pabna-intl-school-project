@@ -314,13 +314,12 @@ height: 140px;
 }
 .nav_items ul li:hover {
   padding: 0 !important;
-border-left: 2px solid var(--last-color);
+border-left: 2px solid var(--primary-color);
 }
 
 .nav_items ul li a {
   width: 100%;
   font-weight: 500;
-  color: #000000;
   z-index: 999 !important;
   font-size: 16px !important;
   text-decoration: none !important;
@@ -329,7 +328,7 @@ border-left: 2px solid var(--last-color);
 .nav_items ul li a:hover{
   width: 100%;
   font-weight: 500;
-  color: var(--last-color);
+  color: var(--primary-color);
   z-index: 999 !important;
   font-size: 16px !important;
   text-decoration: none !important;
@@ -432,7 +431,7 @@ border-left: 2px solid var(--last-color);
 
 /* Hero Start */
 #principal_hero {
-    background: url(../image/hero_bg_02.png);
+    background: url(../image/bg-principal_message.png);
     width: 100%;
     height: 50vh;
     background-position: cover;
@@ -481,7 +480,7 @@ width: 350px;
 
 /* Principal Message Box Start */
 #principal_box {
-    padding: 40px 0px;
+    padding: 40px 0;
     background: url(../image/web_bd_bg-01.png);
 }
 
@@ -506,7 +505,7 @@ width: 350px;
 .prinicipal_img img {
     float: left;
     width: 100%;
-    aspect-ratio: 1/1;
+ height: 350px;
     object-fit: cover;
 }
 
