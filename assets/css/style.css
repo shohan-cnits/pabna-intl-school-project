@@ -318,7 +318,7 @@
 }
 .nav_items ul li:hover {
   padding: 0 !important;
-border-left: 2px solid var(--last-color);
+border-left: 2px solid var(--primary-color);
 }
 
 .nav_items ul li a {
@@ -333,7 +333,7 @@ border-left: 2px solid var(--last-color);
 .nav_items ul li a:hover{
   width: 100%;
   font-weight: 500;
-  color: var(--last-color);
+  color: var(--primary-color);
   z-index: 999 !important;
   font-size: 16px !important;
   text-decoration: none !important;

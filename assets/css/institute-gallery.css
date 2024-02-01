@@ -430,7 +430,7 @@ border-left: 2px solid var(--last-color);
 
 /* Hero Start */
 #institute_gallery_hero {
-    background: url(../image/hero_bg_02.png);
+    background: url(../image/bg_institute_gallery.png);
     width: 100%;
     height: 50vh;
     background-position: cover;
