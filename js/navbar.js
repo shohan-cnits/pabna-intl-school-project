@@ -35,10 +35,11 @@ function scrollFunction() {
 
 
 //slider tab JS
-
+/*
 const wrapper_tabs_box = document.querySelector(".wrapper_tabs_box");
 allwrapper_tabs_box = document.querySelectorAll(".tab_btn"),
 arrowIcons = document.querySelectorAll(".wrapper_slider_icon i");
+const institutionGalleryTabConetent = document.querySelectorAll(".institution_gallery_wrapper");
 
 let isDragging = false;
 
@@ -50,13 +51,6 @@ const handleIcons =() => {
 }
 
 
-allwrapper_tabs_box.forEach(tab_btn => {
-  tab_btn.addEventListener ("click", () => {
-    wrapper_tabs_box.querySelector(".active").classList.remove("active");
-    tab_btn.classList.add("active");
-  })
-
-})
 
 
 arrowIcons.forEach(wrapper_slider_icon => {
@@ -83,3 +77,57 @@ const dragStop = () => {
 wrapper_tabs_box.addEventListener("mousedown",  () => isDragging = true);
 wrapper_tabs_box.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
+
+allwrapper_tabs_box.forEach((tab_btn, index) => {
+  tab_btn.addEventListener ("click", () => {
+    wrapper_tabs_box.querySelector(".active").classList.remove("active");
+    tab_btn.classList.add("active");
+  })
+
+  institutionGalleryTabConetent.forEach((content) => content.classList.remove("active"));
+    institutionGalleryTabConetent[index].classList.add("active");
+
+})
+*/
+
+// scrollable tabs work
+const wrapper_tabs_box = document.querySelector(".product_menu_item_tab"),
+arrowIcons = document.querySelectorAll(".product_tab_arrow_icon i");
+
+arrowIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    wrapper_tabs_box.scrollLeft += icon.id === "left" ? -200 : 200;
+  });
+});
+
+let isDraggingProduct = false;
+const productDragging = (e) => {
+  if (!isDraggingProduct) return;
+  wrapper_tabs_box.classList.add("dragging");
+  wrapper_tabs_box.scrollLeft -= e.movementX;
+};
+
+const productDragStop = () => {
+  wrapper_tabs_box.classList.remove("dragging");
+  isDraggingProduct = false;
+};
+
+wrapper_tabs_box.addEventListener("mousedown", () => (isDraggingProduct = true));
+wrapper_tabs_box.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", productDragStop);
+
+// product menu tabs content work
+const productTabBtn = document.querySelectorAll(".product_menu_tab_btn");
+const productTabContent = document.querySelectorAll(
+  ".product_menu_tab_content"
+);
+
+productTabBtn.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    productTabBtn.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+
+    productTabContent.forEach((content) => content.classList.remove("active"));
+    productTabContent[index].classList.add("active");
+  });
+});

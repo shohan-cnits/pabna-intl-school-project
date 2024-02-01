@@ -618,6 +618,91 @@ transition:  .5s ease-in-out;
 }
 
 
+/* Institution Gallery Start */
+
+
+
+
+.institution_gallery a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.institution_gallery_content_img {
+  position: relative;
+}
+
+.institution_gallery_content_img_overlay h2 {
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 20px;
+  color: var(--bg-color);
+}
+
+.institution_gallery_content_img_overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(0, 44, 83, 0.5);
+  height: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.institution_gallery_content_img:hover
+  .institution_gallery_content_img_overlay {
+  height: 30%;
+}
+
+.institution_gallery_content_btn a {
+  display: block;
+  text-align: center;
+  border: 1px solid #002c53;
+  padding: 7px;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--primary-color);
+  transition: 1s ease-out;
+}
+
+.institution_gallery_content_btn {
+  width: 160px;
+  display: block;
+  margin: auto;
+  color: var(--primary-color);
+  transition: 1s ease-out;
+}
+
+.institution_gallery_content_btn:hover {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
+  border: none;
+}
+
+.institution_gallery_content_btn a:hover {
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.institution_gallery_wrapper {
+  display: none;
+}
+
+.institution_gallery_wrapper.active {
+  display: block;
+}
+
+
+/* Institution Gallery End */
+
 
 /* Galler Institute  Start */
 
