@@ -716,9 +716,24 @@ border-left: 2px solid var(--primary-color);
 
 } */
 
+.institution_blog_btn {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  padding: 6px 0px;
+  background: var(--primary-color);
+}
+
+.institution_blog_btn a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
 .myBlogSwiper {
   height: 0 !important;
-  padding: 350px 0;
+  padding: 280px 0 340px 0;
 }
 
 
@@ -754,6 +769,7 @@ transform: scale(1.2);
 
 .blog_card_text {
   padding: 25px !important;
+  background: var(--bg-color);
 }
 
 .blog_card_text h5 {
