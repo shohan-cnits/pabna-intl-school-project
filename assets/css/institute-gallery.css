@@ -621,84 +621,260 @@ transition:  .5s ease-in-out;
 /* Institution Gallery Start */
 
 
-
-
-.institution_gallery a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-}
-
-.institution_gallery_content_img {
-  position: relative;
-}
-
-.institution_gallery_content_img_overlay h2 {
-  padding-top: 25px;
-  padding-left: 25px;
-  font-size: 20px;
-  color: var(--bg-color);
-}
-
-.institution_gallery_content_img_overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+.menu_item {
   width: 100%;
-  background: rgba(0, 44, 83, 0.5);
-  height: 0;
-  transition: 0.5s ease-in-out;
+  height: 220px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: 0.5s;
 }
 
-.institution_gallery_content_img:hover
-  .institution_gallery_content_img_overlay {
-  height: 30%;
-}
-
-.institution_gallery_content_btn a {
+.menu_item img {
+  opacity: 1;
   display: block;
-  text-align: center;
-  border: 1px solid #002c53;
-  padding: 7px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.menu_item_btn {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_item:hover .menu_item img {
+  opacity: 0.3;
+}
+
+.menu_item:hover .menu_item_btn {
+  opacity: 1;
+}
+
+.menu_item_btn a {
+  display: inline-block;
+  color: var(--global-color);
   text-decoration: none;
-  font-weight: 800;
-  color: var(--primary-color);
-  transition: 1s ease-out;
+  background-color: var(--secondary-color);
+  padding: 10px 35px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.5s;
 }
 
-.institution_gallery_content_btn {
-  width: 160px;
+.menu_item_btn a:hover {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+.menu_item_btn a img {
+  width: 25px;
+}
+
+.menu_btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu_btn a {
+  border: 2px solid var(--secondary-color);
+  padding: 10px 35px !important;
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  text-align: center;
+  font-family: var(--primary-font);
+  display: inline-block;
+  font-weight: 500 !important;
+  transition: 0.5s;
+}
+
+.menu_btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--global-color);
+  border-radius: 30px;
+}
+
+/* menu tab works */
+
+.menu_content .menu_tab_content {
+  display: none;
+  animation: tabContenAnimate 0.8s ease;
+}
+
+@keyframes tabContenAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu_content .menu_tab_content.active {
   display: block;
-  margin: auto;
-  color: var(--primary-color);
-  transition: 1s ease-out;
 }
 
-.institution_gallery_content_btn:hover {
-  background: linear-gradient(
-    120deg,
-    rgba(0, 44, 83, 1),
-    rgba(206, 133, 34, 1)
-  );
-  border: none;
+.menu_content h2 {
+  background: url(../image/bg_admission_form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-family: var(--secondary-font);
+  color: var(--global-color);
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
 }
 
-.institution_gallery_content_btn a:hover {
-  color: var(--bg-color);
-  border: 1px solid var(--bg-color);
+.menu_content h1 {
+  font-family: var(--secondary-font);
+  color: var(--font-color);
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.institution_gallery_wrapper {
+.menu_item_tab {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.menu_item_tab li {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-radius: 4px;
+  color: var(--font-color);
+  font-size: 1.1em;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu_item_tab li.active {
+  border-top: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.menu_item_tab li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu_item_tab li a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.mobile_menu_content {
   display: none;
 }
 
-.institution_gallery_wrapper.active {
-  display: block;
+@media screen and (max-width: 990px) {
+  .menu_item {
+    height: auto;
+  }
+
+  .mobile_menu_content {
+    display: block;
+  }
+
+  .menu_content h1 {
+    font-size: 2em;
+  }
+
+  .menu_content h2 {
+    font-size: 1.8em;
+  }
+
+  .tab_menu {
+    display: none;
+  }
+
+  .mobile_menu_item_tab {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .mobile_menu_item_tab::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
+  .mobile_menu_item_tab.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+  }
+
+  .mobile_menu_item_tab li {
+    margin: 0 10px;
+    white-space: nowrap;
+    padding: 6px 10px;
+  }
+
+  .mobile_menu_item_tab.dragging .menu_tab_btn {
+    user-select: none;
+  }
+
+  .mobile_menu_tabs {
+    overflow-x: hidden;
+    position: relative;
+    margin: 30px 0 40px;
+  }
+
+  .mobile_menu_tabs .tab_icons {
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile_menu_tabs .tab_icons:first-child {
+    left: 0;
+    display: none;
+    background: linear-gradient(90deg, #fff 50%, transparent);
+  }
+
+  .mobile_menu_tabs .tab_icons:last-child {
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, #fff 50%, transparent);
+  }
+
+  .mobile_menu_tabs .tab_icons i {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
 }
+
 
 
 /* Institution Gallery End */
