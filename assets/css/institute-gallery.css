@@ -496,7 +496,8 @@
 /* Hero End */
 
 
-/* Galler Heading Start  */
+/* Institution Gallery Start */
+
 #heading_btn {
   padding: 40px 0;
   background: url(../image/web_bd_bg-01.png);
@@ -515,12 +516,6 @@
   font-size: 18px;
   color: var(--bg-color);
 }
-
-
-
-
-
-/* Institution Gallery Start */
 
 /* product menu tabs */
 .product_menu_tabs {
@@ -728,7 +723,6 @@
 }
 
 .overlay_btn {
-  /* overflow: hidden; */
   opacity: 0;
   pointer-events: none;
   user-select: none;
@@ -741,22 +735,20 @@
 }
 
 .overlay_btn a {
-  width: 45px;
-  height: 45px;
-  /* border: 1px solid var(--primary-color); */
+  width: 55px;
+  height: 55px;
   background: var(--bg-color);
   display: inline-block;
   align-items: center;
   text-align: center;
-  line-height: 45px;
+  line-height: 55px;
   border-radius: 50%;
   margin-top: -20px;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 15px;
   transition: .2s,ease-in-out;
 
 }
-
 
 .overlay_btn a svg path {
   fill: var(--primary-color);
@@ -779,13 +771,11 @@
   transition: 0.5s ease-in-out;
 }
 
-
 .overlay_btn:hover.overlay_btn a svg path {
   fill: var(--bg-color) !important;
 
 
 }
-
 
 .institution_gallery_content_img a img {
   width: 100%;
@@ -815,7 +805,6 @@
   background: url(../image/prev.png) left 48% no-repeat !important;
   opacity: 1 !important;
   float: right;
-
   width: 34% !important;
 }
 
@@ -831,18 +820,35 @@
 }
 
 .lb-image {
-  width: 550px !important;
-  height: 450px !important;
+  width: 800px !important;
+  height: 500px !important;
+  object-fit: cover !important;
 }
+
+@media screen and (max-width: 875px) {
+  .lb-image {
+    width: 650px !important;
+    height: 400px !important;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .lb-image {
+    width: 550px !important;
+    height: 350px !important;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .lb-image {
-    width: 300px !important;
+    width: 100% !important;
     height: 250px !important;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .lb-image {
     width: 270px !important;
     height: 230px !important;
@@ -850,8 +856,6 @@
 }
 
 /* Institution Gallery End */
-
-
 
 
 /* Footer Start */

@@ -545,6 +545,12 @@ width: 350px;
     padding: 7px;
     outline: none;
     font-size: 16px;
+    background: none !important;
+}
+
+.academic_details_content_class  select option:nth-child(1):hover{
+  border-left: 1px solid var(--primary-color) !important;
+  background-color: red;
 }
 
 .academic_details_content_section label{
