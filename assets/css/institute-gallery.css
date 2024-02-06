@@ -516,68 +516,9 @@
   color: var(--bg-color);
 }
 
-/* Galler Heading End */
 
 
-.institution_gallery_content_img a img {
-  width: 100%;
 
-}
-
-.lb-data .lb-close {
-  background-image: url(../image/close.png) !important;
-  display: block;
-  float: right;
-  width: 25px;
-  height: 25px;
-  text-align: right;
-  outline: none;
-}
-
-.lb-nav a.lb-next {
-  background: url(../image/next.png) right 48% no-repeat !important;
-  opacity: 1 !important;
-  float: right;
-  width: 64% !important;
-}
-
-.lb-nav a.lb-prev {
-  background: url(../image/prev.png) left 48% no-repeat !important;
-  opacity: 1 !important;
-  float: right;
-
-  width: 34% !important;
-}
-
-.lightboxOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: var(--primary-color) !important;
-  scroll-behavior: none !important;
-  width: 100% !important;
-  aspect-ratio: 1/1;
-}
-
-.lb-image {
-  width: 550px !important;
-  height: 450px !important;
-}
-
-@media screen and (max-width: 600px) {
-  .lb-image {
-    width: 300px !important;
-    height: 250px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .lb-image {
-    width: 270px !important;
-    height: 230px !important;
-  }
-}
 
 /* Institution Gallery Start */
 
@@ -696,19 +637,7 @@
   backface-visibility: hidden;
 }
 
-.product_menu_item_btn {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .product_menu_item:hover .product_menu_item img {
   opacity: 0.3;
@@ -718,26 +647,9 @@
   opacity: 1;
 }
 
-.product_menu_item_btn a {
-  display: inline-block;
-  color: var(--global-color);
-  text-decoration: none;
-  background-color: var(--secondary-color);
-  padding: 10px 35px 12px;
-  font-size: 1.1em;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: 0.5s;
-}
 
-.product_menu_item_btn a:hover {
-  background-color: var(--primary-color);
-  border-radius: 30px;
-}
 
-.product_menu_item_btn a img {
-  width: 25px;
-}
+
 
 .product_menu_content .product_menu_tab_content {
   display: none;
@@ -793,7 +705,7 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 44, 83, 0.5);
+  background: rgba(0, 44, 83, 0.8);
   height: 0;
   transition: 0.5s ease-in-out;
 }
@@ -816,11 +728,16 @@
 }
 
 .overlay_btn {
-  overflow: hidden;
+  /* overflow: hidden; */
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .institution_gallery_content_img:hover .overlay_btn {
-  overflow: visible;
+  pointer-events: auto;
+  user-select: auto;
+  opacity: 1;
 }
 
 .overlay_btn a {
@@ -836,7 +753,7 @@
   margin-top: -20px;
   overflow: hidden;
   margin-right: 20px;
-  transition: .5s;
+  transition: .2s,ease-in-out;
 
 }
 
@@ -858,6 +775,10 @@
 }
 
 
+.overlay_btn {
+  transition: 0.5s ease-in-out;
+}
+
 
 .overlay_btn:hover.overlay_btn a svg path {
   fill: var(--bg-color) !important;
@@ -866,6 +787,67 @@
 }
 
 
+.institution_gallery_content_img a img {
+  width: 100%;
+
+}
+
+.lb-data .lb-close {
+  background-image: url(../image/close.png) !important;
+  display: block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  text-align: right;
+  outline: none;
+}
+
+
+
+.lb-nav a.lb-next {
+  background: url(../image/next.png) right 48% no-repeat !important;
+  opacity: 1 !important;
+  float: right;
+  width: 64% !important;
+}
+
+.lb-nav a.lb-prev {
+  background: url(../image/prev.png) left 48% no-repeat !important;
+  opacity: 1 !important;
+  float: right;
+
+  width: 34% !important;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--primary-color) !important;
+  scroll-behavior: none !important;
+  width: 100% !important;
+  aspect-ratio: 1/1;
+}
+
+.lb-image {
+  width: 550px !important;
+  height: 450px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .lb-image {
+    width: 300px !important;
+    height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lb-image {
+    width: 270px !important;
+    height: 230px !important;
+  }
+}
 
 /* Institution Gallery End */
 
