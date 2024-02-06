@@ -519,11 +519,11 @@
 /* Galler Heading End */
 
 
-.institution_gallery_content_img a img{
+.institution_gallery_content_img a img {
   width: 100%;
 
 }
- 
+
 .lb-data .lb-close {
   background-image: url(../image/close.png) !important;
   display: block;
@@ -536,48 +536,49 @@
 
 .lb-nav a.lb-next {
   background: url(../image/next.png) right 48% no-repeat !important;
-opacity: 1 !important;
-  float: right ;
+  opacity: 1 !important;
+  float: right;
   width: 64% !important;
 }
 
 .lb-nav a.lb-prev {
   background: url(../image/prev.png) left 48% no-repeat !important;
-opacity: 1 !important;
-  float: right ;
+  opacity: 1 !important;
+  float: right;
 
   width: 34% !important;
 }
 
 .lightboxOverlay {
   position: absolute;
-  top: 0 ;
+  top: 0;
   left: 0;
   z-index: 9999;
   background-color: var(--primary-color) !important;
   scroll-behavior: none !important;
   width: 100% !important;
-aspect-ratio: 1/1;
+  aspect-ratio: 1/1;
 }
 
 .lb-image {
   width: 550px !important;
-  height: 450px !important; 
+  height: 450px !important;
 }
 
 @media screen and (max-width: 600px) {
-  .lb-image{
+  .lb-image {
     width: 300px !important;
-   height: 250px !important;
+    height: 250px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .lb-image{
+  .lb-image {
     width: 270px !important;
-   height: 230px !important;
+    height: 230px !important;
   }
 }
+
 /* Institution Gallery Start */
 
 /* product menu tabs */
@@ -813,17 +814,18 @@ aspect-ratio: 1/1;
   display: flex;
   justify-content: space-between;
 }
+
 .overlay_btn {
   overflow: hidden;
 }
 
-.institution_gallery_content_img:hover  .overlay_btn{
+.institution_gallery_content_img:hover .overlay_btn {
   overflow: visible;
 }
 
-.overlay_btn a{
-  width: 50px;
-  height: 50px;
+.overlay_btn a {
+  width: 45px;
+  height: 45px;
   /* border: 1px solid var(--primary-color); */
   background: var(--bg-color);
   display: inline-block;
@@ -834,14 +836,20 @@ aspect-ratio: 1/1;
   margin-top: -20px;
   overflow: hidden;
   margin-right: 20px;
-  transition:  .5s;
+  transition: .5s;
 
 }
 
-.overlay_btn a:hover{
+
+.overlay_btn a svg path {
+  fill: var(--primary-color);
+
+}
+
+.overlay_btn a:hover {
   background: linear-gradient(120deg,
-  rgba(0, 44, 83, 1),
-  rgba(206, 133, 34, 1));
+      rgba(0, 44, 83, 1),
+      rgba(206, 133, 34, 1));
 
 }
 
@@ -851,9 +859,10 @@ aspect-ratio: 1/1;
 
 
 
-.overlay_btn a:hover.overlay_btn a svg path {
-fill: #fff;
-  
+.overlay_btn:hover.overlay_btn a svg path {
+  fill: var(--bg-color) !important;
+
+
 }
 
 
