@@ -516,33 +516,40 @@
 }
 
 .notice_wrapper_box {
-  overflow-x: auto !important;
+  overflow-x: hidden !important;
 }
 
-table {
+.notice_wrapper_box  table {
   width: 100%;
   border: 1px solid var(--primary-color);
   padding: 10px;
-overflow-x: hidden !important;
+overflow-x: scroll !important;
 word-wrap: nowrap !important;
 
 }
 
 
 
-table th,
+.notice_wrapper_box table th,
 td:nth-child(1) {
   text-align: center;
   font-size: 15px;
   font-weight: 800;
 }
 
-table td,
+.notice_wrapper_box  table td,
 th,
 tr {
   border: 1px solid var(--primary-color);
 padding: 10px;
 
+
+}
+
+.notice_wrapper_box   table td
+th {
+width: 100%;
+border: 1px solid var(--primary-color);
 }
 
 .notice_wrapper_box table th {
