@@ -506,6 +506,8 @@ td:nth-child(1) {
   text-align: center;
   font-size: 15px;
   font-weight: 800;
+  align-items: center;
+  /* padding-top: 45px !important; */
 }
 
 .notice_wrapper_box .table td,

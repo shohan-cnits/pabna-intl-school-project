@@ -540,6 +540,8 @@ width: 350px;
     font-weight: 800;
 }
 
+
+
 .academic_details_content_class select {
     width: 100%;
     padding: 7px;
@@ -548,10 +550,7 @@ width: 350px;
     background: none !important;
 }
 
-.academic_details_content_class  select option:nth-child(1):hover{
-  border-left: 1px solid var(--primary-color) !important;
-  background-color: red;
-}
+
 
 .academic_details_content_section label{
     font-size: 20px;
@@ -755,7 +754,9 @@ width: 350px;
     padding: 7px;
     outline: none;
     font-size: 16px;
+    transition: .5s ease;
 }
+
 
 .email label{
     font-size: 20px;
