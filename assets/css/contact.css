@@ -1073,8 +1073,7 @@ line-height: 35px;
     rgba(0, 44, 83, 1),
     rgba(206, 133, 34, 1)
   );
-  border: 2px solid  transparent
-  !important;
+  border:  none !important;
 }
 
 .gobtn i {
