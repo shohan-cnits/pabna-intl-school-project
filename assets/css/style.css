@@ -37,7 +37,7 @@
 .topbar_content_address a {
   font-size: 16px;
   color: #fff;
-  font-weight: 100;
+
   text-decoration: none;
   font-family: var(--primary-font);
 }
@@ -52,7 +52,11 @@
 }
 
 .topbar_content_address img {
-  width: 25px;
+  width: 22px;
+}
+
+.text_number {
+  font-weight: 200 !important;
 }
 
 .topbar_imgs {
@@ -215,32 +219,37 @@
 
 @media screen and (max-width: 500px) {
   .header_content h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
 
   .header_content h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 23px !important;
     line-height: 25px;
   }
 
   .header_content p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .header_content h1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 25px;
   }
 
   .header_content p {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px !important;
+  }
+
+  .header_content h2 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .header_content_heading_address a {
@@ -884,6 +893,21 @@ width: 13px !important;
   fill: var(--primary-color);
 }
 
+@media screen and (max-width: 600px) {
+  .swiper-button-nexts {
+    left: 87% !important;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-button-nexts {
+    left: 84% !important;
+  }
+
+}
+
+
 /* Institution Blog End */
 
 /* Institution History Start */
@@ -1192,6 +1216,17 @@ width: 13px !important;
 }
 
 
+@media screen and (max-width: 450px) {
+  .institution_gallery_content_img_overlay
+  {
+   height: 30%;
+   overflow: visible;
+  }
+
+  .overlay_btn {
+    opacity: 1;
+  }
+}
 
 
 /* Institution Gallery End */
@@ -1722,8 +1757,32 @@ width: 13px !important;
     width: 50px;
   }
 
-  .footer_page_content_img_overlay_text h2 {
-    font-size: 14px;
+  .footer_page_content_img_overlay_text h2 a{
+    font-size: 10px;
+
+  }
+
+  .footer_page_content_img_overlay_text p a{
+    font-size: 10px;
+  }
+
+  .footer_page_content_img_overlay_text p a{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer_page_content_img_overlay_text p a:hover{
+    font-size: 10px;
+  }
+
+  .footer_page_content_img_overlay_text h2 a:hover{
+    font-size: 10px;
+  }
+
+  .footer_page_content_img_overlay {
+   
+   overflow: visible;
+   height: 40%;
   }
 }
 

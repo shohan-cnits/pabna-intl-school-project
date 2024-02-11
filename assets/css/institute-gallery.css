@@ -782,6 +782,19 @@
 
 }
 
+
+@media screen and (max-width: 450px) {
+  .institution_gallery_content_img_overlay
+  {
+   height: 30%;
+   overflow: visible;
+  }
+
+  .overlay_btn {
+    opacity: 1;
+  }
+}
+
 .lb-data .lb-close {
   background-image: url(../image/close.png) !important;
   display: block;
