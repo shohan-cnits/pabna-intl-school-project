@@ -724,12 +724,38 @@ width: 13px !important;
   .swiper-button-nexts {
     left: 87% !important;
   }
+  .myBlogSwiper{
+    padding: 280px 0 340px 0;
+    margin-top: 20px;
+  }
 
+}
+
+@media screen and (max-width: 1000px) {
+  
+
+  .myBlogSwiper{
+    padding: 280px 0 420px 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .myBlogSwiper{
+    padding: 280px 0 370px 0;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .swiper-button-nexts {
     left: 84% !important;
+  }
+
+  .myBlogSwiper{
+    padding: 240px 0 320px 0;
+    margin-top: 20px;
   }
 
 }

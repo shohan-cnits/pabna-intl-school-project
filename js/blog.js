@@ -15,4 +15,13 @@ var swiper = new Swiper(".myBlogSwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+    },
+    999: {
+        slidesPerView: 2,
+    }
+  }
   });
