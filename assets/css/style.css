@@ -544,13 +544,19 @@
   }
 }
 
+@media screen and (max-width: 570px) {
+  .notice_board_content_menu_text h1 {
+    font-size: 13px;
+  }
+
+  .notice_board_content_menu_text a {
+    font-size: 12px;
+  }
+}
+
 /* Notice Board End */
 
 /* Institution Blog Start */
-/* #institution_blog {
-
-
-} */
 
 .institution_blog_btn {
   width: 100%;

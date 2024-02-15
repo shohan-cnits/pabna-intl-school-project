@@ -646,7 +646,8 @@ a {
   
   @media screen and (max-width: 450px) {
     .footer_page_content_img_overlay_logo img {
-      width: 50px;
+      width: 45px;
+      margin-left: 0px;
     }
   
     .footer_page_content_img_overlay_text h2 a{
@@ -656,6 +657,8 @@ a {
   
     .footer_page_content_img_overlay_text p a{
       font-size: 10px;
+      padding: 0 !important;
+      margin: 0 !important;
     }
   
     .footer_page_content_img_overlay_text p a{
@@ -669,6 +672,8 @@ a {
   
     .footer_page_content_img_overlay_text h2 a:hover{
       font-size: 10px;
+      padding: 0 !important;
+      margin: 0 !important;
     }
   
     .footer_page_content_img_overlay {
