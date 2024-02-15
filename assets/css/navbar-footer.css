@@ -86,13 +86,13 @@ a {
 .header .menu > ul > li {
     display: inline-block;
     line-height: 30px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .header .menu>ul>li>a {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
     text-transform: capitalize;
     transition: color .3s ease;
